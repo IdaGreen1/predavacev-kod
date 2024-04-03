@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obrasci-zadatci</title>
+
+    <body>
+        <form 
+        name="kontakt"
+        action=""
+        method="post"
+        enctype="multipart/form-data"
+        >
+        <p>
+            <label for="name">Ime i prezime*</label><br/>
+            <input
+            id="name"
+            type="text"
+            placeholder="Vaše ime i prezime"
+            size="15"
+            maxlength="30"
+            name="name"
+            required/> 
+        </p>
+
+        <p>
+            <label for="email">E-mail adresa*</label><br>
+            <input
+            id="email"
+            type="email"
+            placeholder="Upišite valjanu e-mail adresu"
+            size="20"
+            maxlength="30"
+            name="email"
+            required/>
+            
+        </p>
+
+        <p>
+            <label for="telephone">Kontak broj telefona*</label><br>
+            <input
+            id="telephone"
+            type="number"
+            size="15"
+            maxlength="30"
+            name="telephone"/>
+        </p>
+
+        <p>
+            <label for="date-of-birth">Datum rođenja*</label></br>
+            <input
+            id="date-of-birth"
+            type="date"
+            max="2024-04-03"
+            min="1925-04-03"/>
+         </p>
+
+         <p> Koje jezike govorite?<br/>
+            <label for="ranking-1">Engleski</label>
+            <input id="ranking-1" value="1" type="checkbox" name="lang">
+
+            <label for="ranking-2">Talijaski</label>
+            <input id="ranking-2" value="2" type="checkbox" name="lang"/>
+
+            <label for="ranking-3">Njemački</label>
+            <input id="ranking-3" value="3" type="checkbox" name="lang"/>
+
+            <label for="ranking-4">Francuski</label>
+            <input id="ranking-4" value="4" type="checkbox" name="lang"/>
+
+            <label for="ranking-5">Španjolski</label>
+            <input id="ranking-5" value="5" type="checkbox"
+            name="lang"/>
+
+         </p>
+
+         <p>
+            Dali ste do sada koristili usluge naše tvrtke?<br/>
+            <label for="ranking-6">Da</label>
+            <input id="ranking-6" value="6" type="radio" name="our"/>
+
+            <label for="ranking-7">Ne</label>
+            <input id="ranking-7" value="7" type="radio" name="our"/>
+
+         </p>
+
+         <p>
+            <label for="file">Priložite životopis</label><br>
+            <input id="file" name="file" type="file" multiple/>
+         </p>
+
+         <p>
+            <button type="reset">Poništi</button>
+            <button type="submit">Prijavi se</button>
+         </p>
+
+        </form>
+
+    </body>
+</html>
