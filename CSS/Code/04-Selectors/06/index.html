@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Selektori</title>
+    <style>
+        body {
+            color: #333;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 20px;
+        }
+
+        header {
+            color: red;
+        }
+
+        footer {
+            color: orange;
+        }
+
+        p:first-child {
+            text-decoration: underline wavy red;
+        }
+
+        /*Pronađi sve paragrafe <p> koji su zadnje dijete bilokojeg elementa*/
+        p:last-child {
+            font-size: 15px;
+            color: pink;
+        }
+
+        /*Pronađi svaki paragraf koji je drugo dijete bilokojeg roditelja*/
+        p:nth-child(2) {
+            font-family: 'Courier New', Courier, monospace;
+            color: darkred;
+        }
+
+        /*Traži sve prve*/
+        p:first-of-type {
+            font-weight: bold;
+            color: purple;
+        }
+
+        /*Tražimo sve zadnje elemente koji su tipa paragraf- čim ga pronađe, primjeni pravilo*/
+        p:last-of-type {
+            text-transform: uppercase;
+        }
+
+        /*Tražimo svaki drugi element, tipa paragraf*/
+        p:nth-of-type(2) {
+            color: yellowgreen;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Prvo dijete je <h1>, zadnje dijete je <p> 
+         Roditelj je: <header>
+    -->
+    <header>
+        <h1>Zaglavlje</h1>
+        <p>Odlomak</p>
+    </header>
+    <hr>
+    <!-- Prvo dijete je <p>, zadnje dijete je <p>
+         Roditelj je: <section>
+    -->
+    <section>
+        <p>Odlomak</p>
+        <p>Odlomak</p>
+        <p>Odlomak</p>
+        <p>Odlomak</p>
+        <p>Odlomak</p>
+    </section>
+    <hr>
+
+    <!-- Prvo dijete je <h1>, zadnje dijete je <p> 
+         Roditelj je: <section>
+    -->
+    <section>
+        <h1>Naslov sekcije</h1>
+        <p>Odlomak</p>
+        <p>Odlomak</p>
+        <p>Odlomak</p>
+        <p>Odlomak</p>
+        <p>Odlomak</p>
+    </section>
+    <hr>
+
+    <!-- Prvo dijete je <p>, zadnje dijete je <p>
+         Roditelj je: <footer>
+    -->
+    <footer>
+        <p>Odlomak</p>
+        <p>Odlomak</p>
+        <p>Odlomak</p>
+    </footer>
+</body>
+
+</html>
