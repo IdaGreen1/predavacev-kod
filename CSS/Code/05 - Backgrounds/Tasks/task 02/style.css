@@ -1,0 +1,12 @@
+body{
+  background:url(../../../../../images/grass.png) ,
+   url(../.././../../../images/pisa.jpeg)center 100%/cover no-repeat ;  
+}
+h1{
+    fill: transparent;
+
+}
+
+p{
+    fill: transparent;
+}
