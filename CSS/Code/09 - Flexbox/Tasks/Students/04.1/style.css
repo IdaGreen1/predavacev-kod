@@ -10,7 +10,8 @@ body {
 
 .wrapper {
     border: 1px dashed #666;
-    width: 400px;
+    padding: 1em;
+    height: 600px;
 }
 
 .wrapper div {
@@ -19,13 +20,18 @@ body {
     padding: 1em;
     text-align: center;
     margin: 1em;
-    
+    width: 31%;
 }
 
 .flex-container {
     display: flex; 
-    flex-direction: row;
+    flex-flow: row wrap;
+    align-content: stretch;
+    
 }
+
+
+
 
 
 
