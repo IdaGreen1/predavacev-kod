@@ -20,18 +20,14 @@ body {
     padding: 1em;
     text-align: center;
     margin: 1em;
-    width: 20%;
+    height: 20%;
 }
 
 .flex-container {
     display: flex; 
     flex-flow: column wrap;
-     
 }
 
-.flex-item {
-    align-items: stretch; 
-}
 
 
 
