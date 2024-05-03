@@ -32,7 +32,6 @@ div {
 
 div:nth-child(1) {
   transform: translate(-400px, 0px);
-
 }
 
 div:nth-child(2) {
@@ -49,11 +48,8 @@ div:nth-child(4) {
 
 div:nth-child(5) {
   transform: translate(0px, -840px) skew(20deg, 15deg);
-  
-
 }
 
 div:nth-child(6) {
   transform: translate(400px, -1120px) skew(10deg, 50deg);
-
 }
