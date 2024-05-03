@@ -10,33 +10,37 @@ body {
     background: #ffffff; 
 }
 
-.title {
-    color: #e5f6ff;
-    opacity: 70%;
-    text-align: center;
-    font-size: 100px;
-    font-weight: 200;
-    user-select: none;
-    
+.month {
+    display: flex;
+    flex-flow: column wrap;
+    max-width: 700px;
+    margin: 20px auto;
 }
 
-.month {
-    display: flex; 
-    margin:200px;   
+.title {
+    text-align: center;
+    font-size: 10rem;
+    font-family: 'IBM Plex Mono';
+    font-weight: 200;
+    color: #e5f6ff;
+    user-select: none;
+    margin: 0;
+    padding: 0;
+    opacity: 0.5;
 }
 
 .week {
-    padding: 1em;
-    align-items: center;
+    display: flex;
+    height: 80px;
 }
 
 .day {
-    width: 76px;
+    width: 100%;
     border: 1px solid #0f62fe;
-    align-items: first baseline;
-    flex-basis: 170px;
-
-
+    background-color: #e5f6ff;
+    color: #0f62fe;
+    margin: 2px;
+    padding: 5px;
 }
 
 .week:first-of-type {
@@ -45,6 +49,24 @@ body {
 
 .week:last-of-type {
     justify-content: flex-start;
+}
+
+.event {
+    position: relative;
+}
+
+.notification {
+    background-color: #be95ff;
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    position: absolute;
+    right: 7px;
+    top: 7px;
+    color: white;
+    font-weight: 300;
+    text-align: center;
+    font-size: 11px;
 }
 
 
