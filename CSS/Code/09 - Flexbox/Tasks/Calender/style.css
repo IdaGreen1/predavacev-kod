@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    }
+
+html,
+body {
+    height: 100%;
+    font-family: 'IBM Plex Mono', monospace;
+    background: #ffffff; 
+}
+
+.title {
+    color: #e5f6ff;
+    opacity: 70%;
+    text-align: center;
+    font-size: 100px;
+    font-weight: 200;
+    user-select: none;
+    
+}
+
+.month {
+    display: flex; 
+    margin:200px;   
+}
+
+.week {
+    padding: 1em;
+    align-items: center;
+}
+
+.day {
+    width: 76px;
+    border: 1px solid #0f62fe;
+    align-items: first baseline;
+    flex-basis: 170px;
+
+
+}
+
+.week:first-of-type {
+    justify-content: flex-end;
+}
+
+.week:last-of-type {
+    justify-content: flex-start;
+}
+
+
+
