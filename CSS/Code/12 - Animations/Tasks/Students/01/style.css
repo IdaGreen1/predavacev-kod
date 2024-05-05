@@ -38,7 +38,7 @@ h1 {
 
     50% {
         transform: scale(1);
-        background-color: yellow;
+        background-color: rgb(236, 236, 190);
     }
 
     100% {
@@ -48,12 +48,12 @@ h1 {
 }
 
 .wrapper div:first-child {
-    animation: animacija1 1s ease-in 0s;
+    animation: animacija1 2s ease-in 0s infinite;
 }
 
 @keyframes animacija2 {
     0% {
-        transform: translateY(0) rotate(0) scale(0)
+        transform: translateY(0) rotate(0) scale(0);
     }
 
     50% {
@@ -66,27 +66,121 @@ h1 {
 }
 
 .wrapper div:nth-child(2) {
-    animation: animacija2 4s linear infinite;
+    animation: animacija2 4s ease-in-out 0s infinite;
 }
 
 @keyframes animacija3 {
     0% {
+        transform: rotate(0);
+        border-radius: 50%;
+    }
 
+  
+    50% {
+        transform: rotate(180deg);
+        border-radius: 0%;
+    }
+
+
+    100% {
+        transform: rotate(360deg);
+        border-radius: 50%;
+    }
+}
+
+.wrapper div:nth-child(3) {
+    animation: animacija3 5s ease-in-out infinite;
+}
+
+@keyframes animacija4 {
+    0% {
+        transform: translateY(0px);
     }
 
     25% {
-
-    }
-
-    50% {
-
+        transform: translateY(10px);
     }
 
     75% {
-
+        transform: translateY(-10px);
     }
 
     100% {
-
+        transform: translateY(0px);
     }
+}
+
+.wrapper div:nth-child(4) {
+    animation: animacija4 1s linear 0s infinite;
+}
+
+@keyframes animacija5 {
+    0% {
+        background-color: aliceblue;
+        transform: translateY(0) rotate(0);
+    }
+
+    25% {
+        background-color: aliceblue;
+        transform: translateY(390px) rotate(0);
+    }
+    50% {
+        background-color: darksalmon;
+        transform: translateY(400px) rotate(360deg);
+    }
+
+    75% {
+        background-color: aliceblue;
+        transform: translateY(390px) rotate(0);
+    }
+
+    100% {
+        background-color: aliceblue;
+        transform: translateY(0) rotate(0) ;
+    }
+    
+}
+
+.wrapper div:nth-child(5) {
+    animation: animacija5 4s linear 0s infinite ;
+}
+
+@keyframes animacija6 {
+    from {
+        background-color: aliceblue;
+    }
+
+    to {
+        background-color: aqua;
+    }
+
+}
+
+.wrapper div:nth-child(6):hover {
+    animation: animacija6 2s ease-in-out 0s infinite;
+}
+
+@keyframes animacija7 {
+    0% {
+       box-shadow: 0 0 0 0 rgba(130, 41, 212, 0.7);
+       transform: scale(1) ;
+    }
+
+    70% {
+       box-shadow: 0 0 0 20px rgba(130, 41, 212, 0);
+       transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1) ;  
+    }
+}
+
+
+.wrapper div:nth-child(7) {
+    transform: translate(-575px, 250px);
+    animation: animacija7 2s ease-in 0s infinite;
+    background-color: blueviolet;
+    border: 2px solid blueviolet;
+    color: white;
 }

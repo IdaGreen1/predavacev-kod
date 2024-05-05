@@ -69,5 +69,10 @@ body {
     font-size: 11px;
 }
 
+.week:first-of-type .day:first-of-type {
+    margin-left: 14.5%;
+}
 
-
+.week:last-of-type .day:last-of-type {
+    margin-right: 43%;
+}
