@@ -163,22 +163,22 @@ h1 {
 @keyframes animacija7 {
     0% {
        box-shadow: 0 0 0 0 rgba(130, 41, 212, 0.7);
-       transform: scale(1) ;
+       transform: translate(-575px, 250px)  scale(1) ;
     }
 
     70% {
        box-shadow: 0 0 0 20px rgba(130, 41, 212, 0);
-       transform: scale(1.1);
+       transform: translate(-575px, 250px)  scale(1.1);
     }
 
     100% {
-        transform: scale(1) ;  
+        transform: translate(-575px, 250px)  scale(1) ;  
     }
 }
 
 
 .wrapper div:nth-child(7) {
-    transform: translate(-575px, 250px);
+    transform: ;
     animation: animacija7 2s ease-in 0s infinite;
     background-color: blueviolet;
     border: 2px solid blueviolet;
