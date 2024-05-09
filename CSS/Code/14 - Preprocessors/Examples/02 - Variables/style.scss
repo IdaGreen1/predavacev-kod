@@ -1,0 +1,26 @@
+$orange: orangered;
+$lavander: lavender;
+$arial: "Arial, sans-serif";
+$font1: "Tahoma, sans-serif";
+$black: #333; 
+
+
+body {
+    background-color: $lavander;
+    color: $orange;
+    font-family: $arial;
+    
+}
+
+h1 {
+    color: $black;
+}
+
+a {
+    font-family: $font1;
+}
+
+article {
+    border: 2px solid $orange;
+    margin: 1em;
+}
