@@ -1,1 +1,131 @@
-/*# sourceMappingURL=style.css.map */
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Tahoma, Verdana, sans-serif;
+}
+
+header,
+footer {
+  background-color: #333;
+  height: 30%;
+  padding: 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style: none;
+  font-size: 20px;
+  padding: 20px 0;
+  transform: translateY(25px);
+}
+
+nav a {
+  font-family: Tahoma, Verdana, sans-serif;
+  border: 2px solid #333;
+  background-color: rgb(138, 11, 11);
+  color: rgb(238, 234, 234);
+  padding: 10px 150px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: rgb(238, 234, 234);
+  color: rgb(138, 11, 11);
+}
+
+div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+div h1,
+div p,
+div a {
+  flex: 0 0 20px;
+  color: rgb(238, 234, 234);
+  font-family: Tahoma, Verdana, sans-serif;
+  font-weight: 100;
+}
+
+div a {
+  border: 2px solid #333;
+  background-color: rgb(138, 11, 11);
+  text-decoration: none;
+  padding: 10px 130px;
+}
+
+div a:hover {
+  background-color: rgb(238, 234, 234);
+  color: rgb(138, 11, 11);
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 0;
+  justify-content: center;
+}
+
+main h1 {
+  text-align: center;
+  padding: 0 28%;
+  font-weight: 100;
+}
+
+main section {
+  border: 2px solid #333;
+  flex: 0 0 28%;
+  padding: 20px 50px;
+  margin: 0px 30px 30px 30px;
+  font-weight: 100;
+}
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 0;
+  color: rgb(238, 234, 234);
+}
+
+footer h1 {
+  text-align: center;
+  padding: 0 28%;
+  transform: translate(50px 0);
+  font-weight: 100;
+}
+
+footer section {
+  text-align: justify;
+  border: 2px solid #333;
+  flex: 0 0 45%;
+  margin-bottom: 20px;
+  padding: 25px 50px;
+  font-weight: 100;
+}
+
+footer h2 {
+  text-align: center;
+  font-weight: 100;
+}/*# sourceMappingURL=style.css.map */

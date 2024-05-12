@@ -1,0 +1,214 @@
+@import 'abstract/mediaquery';
+
+@import 'base/colors';
+@import 'base/typography';
+@import 'base/reset';
+
+body {
+    font-family: $sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header,
+footer {
+    background-color: $color1;
+    height: 30%;
+    padding: 0px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+    font-size: 20px;
+    padding: 20px 0;
+    transform: translateY(25px);
+}
+
+nav a {
+    font-family: $sans-serif;
+    border: 2px solid $color1 ;
+    background-color: $color3;
+    color: $color2;
+    padding: 10px 150px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: $color2 ;
+    color: $color3;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+div h1,
+div p,
+div a {
+    flex: 0 0 20px;
+    color: $color2;
+    font-family: $sans-serif;
+    font-weight: 100;
+}
+
+div a {
+    border: 2px solid $color1;
+    background-color: $color3;
+    text-decoration: none;
+    padding: 10px 130px;
+}
+
+div a:hover {
+    background-color: $color2;
+    color: $color3;
+
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 0;
+    justify-content: center;
+}
+
+main h1 {
+    text-align: center;
+    padding: 0 28%;
+    font-weight: 100;
+}
+
+main section {
+    border: 2px solid $color1;
+    flex: 0 0 28%;
+    padding: 20px 50px;
+    margin: 0px 30px 30px 30px;
+    font-weight: 100;
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 0;
+    color: $color2;
+}
+
+footer h1 {
+    text-align: center;
+    padding: 0 28%;
+    transform: translate(50px 0);
+    font-weight: 100;
+
+}
+
+footer section {
+    text-align: justify;
+    border: 2px solid $color1;
+    flex: 0 0 45%;
+    margin-bottom: 20px;
+    padding: 25px 50px;
+    font-weight: 100;
+
+}
+
+footer h2 {
+    text-align: center;
+    font-weight: 100;
+}
+
+@media screen and (max-width: 992px) {
+
+    header,
+    footer {
+        display: flex;
+        height: 30%;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 15%;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav a {
+        flex: 1px 1px 1px;
+        padding: 0 px 0 px; 
+    }
+    div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    div h1,
+    div p,
+    div a {
+        flex: 0 0 0px;
+    }
+
+    div a {
+        padding: 0px 0px;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    main h1 {
+        text-align: center;
+    }
+
+    main section {
+        flex: 0 0 28%;
+        padding: 20px 50px;
+        margin: 0px 30px 30px 30px;
+    }
+
+    footer {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 0;
+    }
+
+    footer h1 {
+        text-align: center;
+        padding: 0 28%;
+        transform: translate(50px 0);
+    }
+
+    footer section {
+        text-align: justify;
+        flex: 0 0 45%;
+        margin-bottom: 20px;
+        padding: 25px 50px;
+    }
+
+    footer h2 {
+        text-align: center;
+    }
+}
+
+
+@media screen and (max-width: 600px) {}
