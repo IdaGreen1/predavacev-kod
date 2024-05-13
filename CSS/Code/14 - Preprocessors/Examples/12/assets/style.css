@@ -1,0 +1,44 @@
+.container div {
+  border: 1px solid purple;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.container div {
+  background-color: lavender;
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16pxa;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.box-1::after {
+  content: "box1";
+}
+
+.box-2::after {
+  content: "box2";
+}
+
+.box-3::after {
+  content: "box3";
+}
+
+.box-0::before {
+  content: "This right here is ";
+}
+
+.box-1::before {
+  content: "This right here is ";
+}
+
+.box-2::before {
+  content: "This right here is ";
+}/*# sourceMappingURL=style.css.map */
