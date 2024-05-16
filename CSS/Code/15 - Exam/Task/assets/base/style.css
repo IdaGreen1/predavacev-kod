@@ -19,9 +19,10 @@ body {
 }
 
 .logo {
-  max-width: 150px;
-  position: relative;
-  transform: translateX(1700px);
+  max-width: 15%;
+  position: fixed;
+  right: 0;
+  bottom: 0;
 }
 
 .flex-container {
@@ -35,51 +36,63 @@ body {
   max-height: 200px;
 }
 
+.flex-container img {
+  padding: 160px;
+}
+
 @keyframes bart {
   0% {
+    transform: translateX(-400px);
+  }
+  33.33% {
     transform: translateX(0);
   }
-  50% {
-    transform: translateX(-350px);
+  66.66% {
+    transform: translateX(0);
   }
   100% {
     transform: translateX(0);
   }
 }
 .flex-container img:first-of-type {
-  animation: bart 1.5s ease-in-out 1.5s alternate;
+  transform: translateX(-400px);
+  animation: bart 1.5s ease-in 1.5s normal forwards;
 }
 
 @keyframes homer {
   0% {
-    transform: translateY(0);
+    transform: translateY(-1450px);
   }
-  50% {
-    transform: translateY(-650px);
+  33% {
+    transform: translateY(-1450px);
+  }
+  66% {
+    transform: translateY(0);
   }
   100% {
     transform: translateY(0);
   }
 }
 .flex-container img:nth-of-type(2) {
-  animation: homer 1.5s ease-in-out 1.5s alternate;
+  transform: translateY(-1450px);
+  animation: homer 1.5s ease-in-out 1.5s normal forwards;
 }
 
 @keyframes lisa {
   0% {
-    transform: translateX(0);
+    transform: translateX(1200px);
   }
-  50% {
-    transform: translateX(350px);
+  33% {
+    transform: translateX(1200px);
+  }
+  66% {
+    transform: translateX(1200px);
   }
   100% {
     transform: translateX(0);
   }
 }
 .flex-container img:nth-of-type(3) {
-  animation: lisa 1.5s ease-in-out 1.5s alternate;
-}
-
-.flex-container img {
-  padding: 150px;
+  transform: translateX(1200px);
+  animation: lisa 1.5s ease-in-out 1.5s normal forwards;
 }/*# sourceMappingURL=style.css.map */
