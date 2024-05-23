@@ -19,5 +19,5 @@ var concat = text + 'consectetur adipiscing elit';
 text.toLocaleUpperCase;
 
 //6
-text.
+
 
