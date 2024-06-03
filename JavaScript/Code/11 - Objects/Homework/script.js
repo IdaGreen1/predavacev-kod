@@ -15,3 +15,14 @@ var library = [
         readingStatus: false,
     },
 ];
+
+for (var i = 0; i < library.length; i++) {
+    readingStatus = library[i].readingStatus;
+    title = library[i].title;
+    author = library[i].author;
+    if (readingStatus == true) {
+        console.log('Already read ' + title + ' by ' + author);
+    } else {
+        console.log('You still need to read ' + title + ' by ' + author);
+    }
+}

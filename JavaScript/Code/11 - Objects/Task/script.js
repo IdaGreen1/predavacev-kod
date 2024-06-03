@@ -18,4 +18,7 @@ let car = {
 }
 
 console.log(car.brand.manufacturer, car.brand.model,)
-console.log(`${car.brand.manufacturer} , ${car.brand.model}, is suitabile for families` )
+console.log(`${car.brand.manufacturer} ${car.brand.model}, is suitabile for families` )
+
+var myCarJSON = JSON.stringify(car);
+console.log(myCarJSON);

@@ -1,16 +1,14 @@
 let words = ['quickest', 'brown', 'fox', 'jumps', 'over', 'the', 'lazy', 'dog'];
 
-function niz(words[]) {
-    count = 0;
+function findLongestWord(words) {
+    let = oneWord = '';
     for (var i = 0; i < words.length; i++) {
-        console.log(words[i] );
+        if (words[i].length > oneWord.length) {
+            oneWord = words[i];
         }
-        oneWord = '';
-        if (oneWord.length < niz[i].length){
-            oneWord = niz[i];
-        } 
+    }
         return oneWord;
         }
 
 
-console.log(niz(oneWord));
+console.log(findLongestWord(words));
