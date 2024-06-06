@@ -14,7 +14,6 @@ var para2 = document.getElementById('p2');
 para2.remove;
 
 //EXAMPLE NUMBER 3
-
 var h1 = document.querySelector('h1');
 h1.innerText = 'Hello, class!';
 h1.setAttribute('class', 'hero');
@@ -22,4 +21,6 @@ h1.setAttribute('id', 'hero');
 
 //EXAMPLE NUMBER 4
 document.querySelector('#div2').innerHTML =
-'<h1>I have just added myself here.</h1>';
+    '<h1>I have just added myself here.</h1>';
+
+    var element = document.getElementById(id)
