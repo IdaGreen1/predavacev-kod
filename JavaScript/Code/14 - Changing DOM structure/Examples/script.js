@@ -9,7 +9,6 @@ console.log(main);
 
 var newDiv = document.createElement('div');
 console.log(newDiv);
-
 // Appending <div> to HTML
 main.appendChild(newDiv);
 

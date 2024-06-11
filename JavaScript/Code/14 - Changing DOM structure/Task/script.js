@@ -9,12 +9,10 @@ div.innerText = 'Hello, World';
 document.getElementById('footer').prepend(div); 
 
 
-
 var count = 0;
 for (var i = 0; i <= 1; i++) {
     var li = document.createElement('li');
-    document.querySelector('ul').appendChild(li);
-    
+    document.querySelector('ul').appendChild(li); 
 }
 
 
