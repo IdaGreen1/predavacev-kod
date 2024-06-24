@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat Facts Api</title>
+</head>
+
+<body>
+    <h3>Random Cat Fact</h3>
+    <hr>
+    <p id="catFact"></p>
+    <button onclick="getFact()">Get a new fact</button>
+    <script>
+
+        const url = 'https://catfact.ninja/fact'
+
+        function getFact() {
+            fetch(url)
+                .then(response => response.json())
+                .then(data => document.querySelector('p').innerText = data.fact);
+        }
+
+        getFact();
+    </script>
+</body>
+
+</html>
