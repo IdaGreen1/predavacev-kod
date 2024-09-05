@@ -12,22 +12,35 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
+    <script src="../Task/script.js"></script>
   </head>
 
-  <script>
-const url = 'http://api.edu.skuflic.com/users'
-fetch (url)
-.then (response => response.json())
-.then (data => showData(data))
+ 
+  <body>
+    <script id="template" type="text/x-handlebars-template"></script>
+    <table>
+      <tr>
+        <th>index</th>
+        <th>Ime</th>
+        <th>Datum rođenja</th>
+        <th>Grad</th>
+        <th>Država</th>
+       <th>email</th>
+     </tr>
+     {{#each user}}
+      <tr>
+        <td>{{@index}}</td>
+        <td>{{name}}</td>
+        <td>{{birthday}}</td>
+        <td>{{address.city}}</td>
+        <td>{{address.country}}</td>
+        <td>{{email}}</td>
+      </tr>
+    {{/each}}
+</table>
+</script>
 
-function showData(data) {
-  <tr class="people_list">
-  {{#each people}}
-    <th>{{this}}</th>
-  {{/each}}
-</tr>
-}
+<div id="users"></div>
 
-  </script>
-  <body></body>
+  </body>
 </html>

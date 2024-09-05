@@ -1,18 +1,21 @@
 /**
 // Inicijalizacija varijabli?
 */
-var first_name = "Tony";
+var firstName = "Tony";
 
-var first_name = "John",
-lastName = Doe,
-price = 0,
-0discount = 78,
-fullPrice == 0,
-break = [], /*
-$myObject = {};
+myObject = {
+firstName : "John",
+lastName :Doe,
+price : 0,
+discount : 78,
+fullPrice : 0,
+breakArray :[],
+};
 
-console.log(PRICE);
+
+
+console.log(price);
 console.log(lastname);
 
-// Kraj mog
-programa
+/**  Kraj mog
+programa */
