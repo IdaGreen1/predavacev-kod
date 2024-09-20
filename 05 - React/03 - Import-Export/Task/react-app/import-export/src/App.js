@@ -1,27 +1,21 @@
+import { Component1 } from '../../../../../03.1 - IndexJS/my-new-app/src/Components';
 import './App.css';
-import './helpers/Default-export';
-import { heloo, divide, dogName, dogAge } from './helpers/Named-export';
+import { DefaultComponent } from './Components';
+
+
 
 function App() {
   return (
     <div>
+      <center>
       <h1>Welcome</h1>
+      </center>
+      <DefaultComponent/>
     </div>
   );
 
   
 }
 
-heloo("Ida", "Bahun");
-divide(10, 5);
-
-function MyDog() {
-  return (
-    <div>
-      <p>My dog is called {dogName} , and she is { dogAge } years old</p>
-    </div>
-  )
-}
-
 export default App;
-export { MyDog };
+
