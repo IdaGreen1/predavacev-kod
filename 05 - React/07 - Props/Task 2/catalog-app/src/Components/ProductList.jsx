@@ -11,6 +11,9 @@ export default function ProductList(props) {
         <div>
         <h1>All products</h1>
         <p>Data is coming from single ProductList.jsx component</p>
+        products.map((product) = (
+            <div></div>
+        ))
             <img src={props.imageUrl} alt='placehold'></img>   
             <h2>{props.name}</h2> 
             <p>{props.description}</p>

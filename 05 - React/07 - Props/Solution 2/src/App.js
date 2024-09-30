@@ -2,7 +2,6 @@ import './App.css';
 import { ProductCard, ProductList } from './Components';
 
 export default function App() {
-  
   const product = {
     name: 'Wireless Headphones',
     description: 'High-quality wireless headphones with noise cancellation.',
@@ -10,8 +9,7 @@ export default function App() {
     rating: 4.5,
     imageUrl: 'https://placehold.co/300x200',
   };
-    
-  
+
   const products = [
     {
       id: 1,
@@ -55,22 +53,21 @@ export default function App() {
     },
   ];
 
-  
-  
-   
   return (
     <div>
+      <h1>Featured Product</h1>
+      <p>Data is coming from a single ProductCard.jsx component.</p>
       <ProductCard
-        imageUrl={product.imageUrl}
         name={product.name}
         description={product.description}
         price={product.price}
-        rating={product.rating} />
-      <hr></hr>
-      <ProductList products={products}
-       /> 
+        rating={product.rating}
+        imageUrl={product.imageUrl}
+      />
+      <hr />
+      <h1>All Products</h1>
+      <p>Data is coming from a single ProductList.jsx component.</p>
+      <ProductList products={products} />
     </div>
   );
 }
-
-
