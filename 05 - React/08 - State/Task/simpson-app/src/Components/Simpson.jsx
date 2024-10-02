@@ -5,18 +5,22 @@ export default class Simpson extends Component {
     state = {
         firstName: 'Lisa',
         bestFriend: 'Janney Powel',
-        lovingSchool: 'love school',
-        imgUrl: 'https://all-free-download.com/free-vector/download/lisa_simpson_01_the_simpsons_51462.html',
+        lovingSchool: true,
+        imgUrl:'https://upload.wikimedia.org/wikipedia/en/e/ec/Lisa_Simpson.png'
     }
 
     changeState = () => {
-        this.setState({firstName:'Bart', bestFriend:'Milhouse Van Houte', lovingSchool:"don't"})
+        this.setState({ firstName: 'Bart', bestFriend: 'Milhouse Van Houte', lovingSchool: false, imgUrl: 'https://upload.wikimedia.org/wikipedia/en/a/aa/Bart_Simpson_200px.png' })
+    }
+
+    handleState = () => {
+        return this.state ? this.changeState : this.state;
     }
 
     render() {
         return(
             <div>
-                <SimpsonTalk firstName={this.state.firstName} bestFriend={this.state.bestFriend} lovingSchool={this.state.lovingSchool}/>
+                <SimpsonTalk imgUrl={this.state.imgUrl} firstName={this.state.firstName} bestFriend={this.state.bestFriend} lovingSchool={this.state.lovingSchool}/>
                 <button onClick={this.changeState}>Change Character</button>
             </div>
         )
@@ -26,6 +30,7 @@ export default class Simpson extends Component {
 function SimpsonTalk (props) {
     return (
         <div>
+            <img src={props.imgUrl} alt={props.firstName}/>
             <p> Hi, my name is {props.firstName}. My best friend is {props.bestFriend} and my mother is Marge Simpson. I really, really {props.lovingSchool} love school.
            </p>
         </div>
