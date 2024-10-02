@@ -10,12 +10,10 @@ export default class Simpson extends Component {
     }
 
     changeState = () => {
-        this.setState({ firstName: 'Bart', bestFriend: 'Milhouse Van Houte', lovingSchool: false, imgUrl: 'https://upload.wikimedia.org/wikipedia/en/a/aa/Bart_Simpson_200px.png' })
+        this.setState({ firstName: 'Bart', bestFriend: 'Milhouse Van Houte', lovingSchool: false, imgUrl: 'https://upload.wikimedia.org/wikipedia/en/a/aa/Bart_Simpson_200px.png' }) 
+      
     }
 
-    handleState = () => {
-        return this.state ? this.changeState : this.state;
-    }
 
     render() {
         return(
