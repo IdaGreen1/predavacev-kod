@@ -18,7 +18,7 @@ export default function Hooks() {
             <hr/>
 
             <p>John favorite fruit is {fruit}.</p>
-            <button on onClick={() => setFruit('banana')}>Change John's favorite fruit.</button>
+            <button on onClick={() => setFruit('banana')}>Change John's favorite fruit.</button> 
        </div>
     );
 }
