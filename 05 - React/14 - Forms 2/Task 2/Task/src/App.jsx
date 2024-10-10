@@ -1,6 +1,6 @@
 import { User } from './User';
+
 import React, { useState } from 'react';
-import NewUser from './User/NewUser';
 
 export default function App() {
   const [users, setUsers] = useState([
@@ -8,16 +8,6 @@ export default function App() {
     { id: 2, name: 'Marko', years: 35 },
     { id: 3, name: 'Ana', years: 25 },
   ]);
-
-  const handleAddUser = (name, years) => {
-    const NewUsers = {
-      id: users.length + 1,
-      name: '',
-      years: parseInt(years),
-    };
-
-    setUsers([...users, ])
-  };
 
   const handleButtonPress = () => {
     const newUsers = users.map(user => ({ ...user, years: user.years + 1 }));
@@ -30,7 +20,6 @@ export default function App() {
     setUsers(newUsers);
   };
 
-  
   return (
     <div>
       <h1>React aplikacija</h1>
@@ -45,13 +34,6 @@ export default function App() {
           onNameChange={event => handleNameChange(event, index)}
         />
       ))}
-
-      <br />
-      <hr/>
-      <p>
-        <NewUser onAddUser={handleAddUser}
-                 value={<User/>} /> 
-                 </p>
-    </div> 
+    </div>
   );
-}; 
+};

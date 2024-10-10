@@ -43,5 +43,7 @@ export default function NewUser({ onAddUser }) {
             />
             <button type="submit">Add new User</button>
         </form>
+
+        
     );
 }

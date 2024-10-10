@@ -1,23 +1,12 @@
-import { User } from './User';
-import React, { useState } from 'react';
-import NewUser from './User/NewUser';
+import { useState } from 'react';
+import { User, NewUser } from './User';
 
-export default function App() {
+const App = () => {
   const [users, setUsers] = useState([
-    { id: 1, name: 'Nino', years: 26 },
+    { id: 1, name: 'Ivan', years: 30 },
     { id: 2, name: 'Marko', years: 35 },
     { id: 3, name: 'Ana', years: 25 },
   ]);
-
-  const handleAddUser = (name, years) => {
-    const NewUsers = {
-      id: users.length + 1,
-      name: '',
-      years: parseInt(years),
-    };
-
-    setUsers([...users, ])
-  };
 
   const handleButtonPress = () => {
     const newUsers = users.map(user => ({ ...user, years: user.years + 1 }));
@@ -30,7 +19,22 @@ export default function App() {
     setUsers(newUsers);
   };
 
-  
+  const handleDeleteUser = index => {
+    const newUsers = [...users];
+    newUsers.splice(index, 1);
+    setUsers(newUsers);
+  };
+
+  const addNewUser = ({ name, years }) => {
+    const newUser = {
+      id: crypto.randomUUID(),
+      name,
+      years,
+    };
+
+    setUsers([...users, newUser]);
+  };
+
   return (
     <div>
       <h1>React aplikacija</h1>
@@ -40,18 +44,18 @@ export default function App() {
       {users.map((user, index) => (
         <User
           key={user.id}
+          id={user.id}
           name={user.name}
           years={user.years}
           onNameChange={event => handleNameChange(event, index)}
+          onDelete={() => handleDeleteUser(index)}
         />
       ))}
 
-      <br />
-      <hr/>
-      <p>
-        <NewUser onAddUser={handleAddUser}
-                 value={<User/>} /> 
-                 </p>
-    </div> 
+      <NewUser onUserSubmit={addNewUser} />
+    </div>
   );
-}; 
+};
+
+export default App;
+
