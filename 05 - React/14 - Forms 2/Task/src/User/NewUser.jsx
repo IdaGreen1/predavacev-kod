@@ -1,42 +1,47 @@
 import { useState } from 'react';
 
 
-export default function NewUser() {
+export default function NewUser({ onAddUser }) {
+    const [name, setName] = useState('');
+    const [years, setYears] = useState('');
+    
+    const handleSubmit = (event) => {
+        event.preventDefault();
 
-    const [firstName, setFirstName] = useState('Ime');
-    const [age, setAge] = useState('Godine');
-
-    const changeFirstName = (e) => {
-        setFirstName(e.target.value);
+        if (name && years) {
+            onAddUser(name, years);
+            setName('');
+            setYears('');
+        } else {
+            alert('Please fill in both fields');
+        }
     };
 
-    const changeAge = (e) => {
-        setAge(e.target.value);
-    }
+    const handleYearsChange = (event) => {
+        const value = event.target.value;
 
+        if (/^\d*$/.test(value)) {
 
-    const handleNewUser = (e) => {
-        e.preventDefault();
-    }
+            setYears(value);
+        }
+    };
 
     return (
-        <div>
-            <h3>Ovdje možete stvoriti novog korisnika</h3>
-            <form onSubmit={handleNewUser}>
-            <label>
-                <input type='text' value={firstName} onChange={changeFirstName} />
-            </label>
-
-            <label>
-                <input type='text' value={age} onChange={changeAge} />
-            </label>
-                <button type="submit">Dodaj novog korisnika</button>
-            </form>
-            <p>
-                Pozdrav, moje ime je {firstName} i imam {age} godina.
-            </p>
-           
-
-        </div>
-    )
+        
+            
+        <form onSubmit={handleSubmit}>
+            <input
+                type='text'
+                value={name}
+                placeholder='Enter Name'
+                onChange={(event) => setName(event.target.value)}
+            />
+            <input type='text'
+                value={years}
+                placeholder='Enter Age'
+                onChange={handleYearsChange}
+            />
+            <button type="submit">Add new User</button>
+        </form>
+    );
 }
