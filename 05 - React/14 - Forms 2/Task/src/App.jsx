@@ -1,4 +1,4 @@
-import { User } from './User';
+import  User  from './User';
 import React, { useState } from 'react';
 import NewUser from './User/NewUser';
 
@@ -10,7 +10,7 @@ export default function App() {
   ]);
 
   const handleAddUser = (name, years) => {
-    const NewUsers = {
+    const newUsers = {
       id: users.length + 1,
       name: '',
       years: parseInt(years),
