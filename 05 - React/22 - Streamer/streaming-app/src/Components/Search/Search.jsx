@@ -55,7 +55,7 @@ export default function Search() {
                     <img src='https://placehold.co/150x225' alt={data.title} />
                   ) : (
                     <img
-                      src={`https://image.tmdb.org/t/p/w342/${data.poster_path}`}
+                      src={`https://image.tmdb.org/t/p/w342/${data.poster_path} `} alt={data.title}
                     />
                   )}
                 </a>
