@@ -1,0 +1,12 @@
+.add-button{
+    border: 2px solid green;
+    background: aliceblue;
+    color: green;
+    font-weight: bold;
+}
+
+.remove-button{
+    border: 2px solid red;
+    background: red;
+    font-weight: bold;
+}
