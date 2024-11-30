@@ -7,6 +7,12 @@
 
 .remove-button{
     border: 2px solid red;
-    background: red;
+    background: aliceblue;
+    color: red;
     font-weight: bold;
+}
+
+.task-completed{
+    color:gray;
+    text-decoration: line-through;
 }

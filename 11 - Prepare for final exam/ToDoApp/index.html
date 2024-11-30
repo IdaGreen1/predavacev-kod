@@ -4,27 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To-do app</title>
-    <link rel="stylesheets" href="style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!--Dodajemo obrazac za unos stavki i gumb dodaj stavku-->
     <form>
-        <input placeholder="e.g. Buy Milk">
+        <input placeholder="e.g. Buy Milk" name="task">
         <button class="add-button">Add Task</button>
     </form>
     
     <!--Dodajemo listu stavki-->
-    <div>
-        <div>
+    <div id="task-list">
+        <div class="task-completed">
             <input type="checkbox">
             <span>Buy milk</span>
             <button class="remove-button">Remove</button>
         </div>
-        <div>
+        <div class="task-completed">
             <input type="checkbox">
             <span>Buy Bread</span>
-            <button class="task-remove-button">Remove</button>
+            <button class="remove-button">Remove</button>
         </div>
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
